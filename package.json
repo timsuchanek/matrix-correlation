@@ -1,10 +1,10 @@
 {
-  "name": "matrix_correlations",
-  "version": "0.0.0",
-  "description": "",
+  "name": "matrix-correlation",
+  "version": "0.0.1",
+  "description": "Node Script to calculate SAD, SSD or ZNCC between two matrices.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "author": "Tim Suchanek <tim.suchanek@gmail.com>",
   "license": "MIT"

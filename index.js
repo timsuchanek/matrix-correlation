@@ -20,6 +20,9 @@ exports.SSD = function(A, B) {
   return sum;
 }
 
+/**
+  Zero Mean Normalized Cross-Correlation (ZNCC) of two matrices.
+*/
 exports.ZNCC = function(A, B) {
   var mean_A = mean(A);
   var mean_B = mean(B);
