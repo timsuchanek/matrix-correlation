@@ -4,7 +4,7 @@
 exports.SAD = function(A, B) {
   var sum = 0;
   overall(A, B, function(a, b) {
-    sum += a - b;
+    sum += Math.abs(a - b);
   });
   return sum;
 }
@@ -34,7 +34,7 @@ exports.ZNCC = function(A, B) {
     denumerator += (a - mean_A) * (a - mean_A);
     denumerator_2 += (b - mean_B) * (b - mean_B);
   });
-  
+
   denumerator = Math.sqrt(denumerator * denumerator_2);
 
   return numerator / denumerator;
