@@ -25,7 +25,19 @@ exports.ZNCC = function(A, B) {
   var mean_B = mean(B);
 
   var numerator = 0;
-  var demunerator = ...;
+  var denumerator = 0;
+  var denumerator = 0;
+  var denumerator_2 = 0;
+  
+  overall(A, B, function(a, b) {
+    numerator += (a - mean_A) * (b - mean_B);
+    denumerator += (a - mean_A) * (a - mean_A);
+    denumerator_2 += (b - mean_B) * (b - mean_B);
+  });
+  
+  denumerator = Math.sqrt(denumerator * denumerator_2);
+
+  return numerator / denumerator;
 }
 
 function mean(A) {
